@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Article Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+  <h1 class="text-center">Create or Update News Article</h1>
+  <form id="newsForm" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" id="title" required>
+    </div>
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input type="datetime-local" class="form-control" id="date" required>
+    </div>
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input type="text" class="form-control" id="author" required>
+    </div>
+    <div class="form-group">
+      <label for="summary">Summary</label>
+      <textarea class="form-control" id="summary" rows="3" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="content">Content</label>
+      <textarea class="form-control" id="content" rows="5" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="category">Category</label>
+      <select class="form-control" id="category" required>
+        <option value="Announcements">Announcements</option>
+        <option value="Media Coverage">Media Coverage</option>
+        <option value="Events">Events</option>
+        <option value="News Articles">News Articles</option>
+        <option value="Press Releases">Press Releases</option>
+        <option value="News">News</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="tags">Tags (comma separated)</label>
+      <input type="text" class="form-control" id="tags" placeholder="e.g. tag1, tag2, tag3">
+    </div>
+    <div class="form-group">
+      <label for="images">Upload Images:</label>
+      <input type="file" class="form-control" id="images" multiple accept="image/*">
+    </div>
+    <div class="form-group">
+      <label for="video">Upload Video:</label>
+      <input type="file" class="form-control" id="video" accept="video/*">
+    </div>
+    <div class="form-group">
+      <label for="relatedArticles">Related Articles (comma separated)</label>
+      <input type="text" class="form-control" id="relatedArticles" placeholder="e.g. article1, article2">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<!-- Newsletter Start -->
+<div class="container-fluid bg-primary newsletter py-5">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
+        <img class="img-fluid" src="img/newsletter.png" alt="">
+      </div>
+      <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+        <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Newsletter</div>
+        <h1 class="text-white mb-4">Let's subscribe the newsletter</h1>
+        <div class="position-relative w-100 mt-3 mb-2">
+          <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                 placeholder="Enter Your Email" style="height: 48px;">
+          <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                  class="fa fa-paper-plane text-primary fs-4"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Newsletter End -->
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 footer pt-5">
+  <div class="container py-5">
+    <div class="row g-5">
+      <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="d-inline-block mb-3">
+          <h1 class="text-white">BM<span class="text-dark">.</span>AI-WareTech</h1>
+        </a>
+        <p class="mb-0">We provide Data Warehouse Solutions, AI & Machine Learning, Consulting & Strategy. </p>
+      </div>
+      <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+        <h5 class="text-white mb-4">Get In Touch</h5>
+        <p><i class="fa fa-map-marker-alt me-3"></i>Kirkos Sub-City, Addis Ababa, Ethiopia</p>
+        <p><i class="fa fa-phone-alt me-3"></i>+251799210131 or +251799100161</p>
+        <p><i class="fa fa-envelope me-3"></i>info@bmaiwaretech.com </p>
+        <div class="d-flex pt-2">
+          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/104924086"><i class="fab fa-linkedin-in"></i></a>
+
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+        <h5 class="text-white mb-4">Popular Link</h5>
+        <a class="btn btn-link" href="about.html">About Us</a>
+        <a class="btn btn-link" href="contact.html">Contact Us</a>
+        <a class="btn btn-link" href="service.html">Services</a>
+        <a class="btn btn-link" href="project.html">Projects</a>
+
+
+      </div>
+      <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+        <h5 class="text-white mb-4">Our Services</h5>
+        <a class="btn btn-link" href="service.html">Data Warehouse Solutions</a>
+        <a class="btn btn-link" href="service.html">Consulting & Strategy</a>
+        <a class="btn btn-link" href="service.html">AI & Machine Learning</a>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="container wow fadeIn" data-wow-delay="0.1s">
+    <div class="copyright">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy; <a class="border-bottom" href="#">BM AI-WareTech Solutions</a>, All Right Reserved.
+
+          <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+          Designed By BM AI-WareTech Solutions
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer End -->
+
+<script>
+  document.getElementById('newsForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const title = document.getElementById('title').value.trim();
+    const date = document.getElementById('date').value;
+    const author = document.getElementById('author').value.trim();
+    const summary = document.getElementById('summary').value.trim();
+    const content = document.getElementById('content').value.trim();
+    const category = document.getElementById('category').value;
+    const tags = document.getElementById('tags').value.split(',').map(tag => tag.trim());
+    const images = document.getElementById('images').files;
+    const video = document.getElementById('video').files[0];
+    const relatedArticles = document.getElementById('relatedArticles').value.split(',').map(article => article.trim());
+
+    // Check required fields
+    if (!title || !date || !author || !summary || !content || !category) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('title', title);
+    formData.append('date', date);
+    formData.append('author', author);
+    formData.append('summary', summary);
+    formData.append('content', content);
+    formData.append('category', category);
+    tags.forEach(tag => formData.append('tags', tag));
+    relatedArticles.forEach(article => formData.append('relatedArticles', article));
+
+    for (let i = 0; i < images.length; i++) {
+      formData.append('images', images[i]);
+    }
+
+    if (video) {
+      formData.append('video', video);
+    }
+
+    fetch('/api/news', {
+      method: 'POST',
+      body: formData
+    })
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.json();
+            })
+            .then(data => {
+              console.log(data);
+              alert('News article saved successfully!');
+              document.getElementById('newsForm').reset();
+            })
+            .catch(error => {
+              console.error('Error:', error);
+              alert('Error saving news article: ' + error.message);
+            });
+  });
+</script>
+</body>
+</html>
