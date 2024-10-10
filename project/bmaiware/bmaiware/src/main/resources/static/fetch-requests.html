@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Quote Requests</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="mb-4">Quote Requests</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Your Request</th>
+            <th>Request Date</th>
+        </tr>
+        </thead>
+        <tbody id="requestTableBody">
+        <!-- Requests will be populated here -->
+        </tbody>
+    </table>
+    <button id="fetchRequests" class="btn btn-primary">Fetch Requests</button>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#fetchRequests").on("click", function () {
+            $.ajax({
+                type: "GET",
+                url: "/api/requests",
+                success: function (requests) {
+                    $("#requestTableBody").empty(); // Clear existing data
+                    requests.forEach(function (request) {
+                        $("#requestTableBody").append(`
+                            <tr>
+                                <td>${request.id}</td>
+                                <td>${request.name}</td>
+                                <td>${request.phone}</td>
+                                <td>${request.email}</td>
+                                <td>${request.message}</td>
+                                <td>${new Date(request.requestDate).toLocaleString()}</td>
+                            </tr>
+                        `);
+                    });
+                },
+                error: function () {
+                    alert("Error fetching requests. Please try again.");
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
