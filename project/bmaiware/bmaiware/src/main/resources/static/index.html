@@ -48,10 +48,10 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white">BM<span class="text-dark">.</span>AI-WareTech</h1>
+<!--                    <img class="img-fluid" src="img/imagess.png" alt="" style="width: 150px; height: auto;">-->
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
+                        data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -66,13 +66,13 @@
                                 <a href="vacancy.html" class="dropdown-item">Job Openings</a>
                                 <a href="news.html" class="dropdown-item">Company News</a>
                                 <a href="submit-request.html" class="dropdown-item">Get a Quote</a>
-
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
-                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                    <!-- Corrected button element -->
+                    <button type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
+                            data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
                 </div>
             </nav>
         </div>
@@ -80,14 +80,24 @@
     <!-- Navbar End -->
 
 
+
     <!-- Hero Start -->
     <div class="container-fluid pt-5 bg-primary hero-header mb-5">
         <div class="container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">BM.AI-WareTech</div>
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">BM AI-WareTech Solutions for Your Business</h1>
-                    <p class="text-white mb-4 animated slideInRight">We provide Data Warehouse Solutions, AI & Machine Learning, Consulting & Strategy</p>
+
+                    <div style="display: flex; align-items: center;">
+                        <img class="img-fluid" src="img/imagess.png" alt="" style="width: 150px; height: auto; margin-right: 15px;">
+                        <div>
+                            <h1 class="display-4 text-white mb-0 animated slideInRight">AI-WareTech</h1>
+                            <h6 class="display-6 text-white mb-0 animated slideInRight" style="font-weight: normal; margin-top: -5px;">AI Beyond Limits</h6>
+                        </div>
+                    </div>
+
+
+                    <p class="text-white mb-4 animated slideInRight font-weight-bold">We provide Data Warehouse Solutions, AI & Machine Learning, Consulting & Strategy</p>
+
                     <a href="service.html" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
                     <a href="contact.html" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
                 </div>
@@ -462,14 +472,20 @@
                                         <small>Co Founder & CINO </small>
                                         <div class="d-flex justify-content-center mt-3">
 
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
-                                                    class="fab fa-linkedin-in"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://www.facebook.com/YourPageName" target="_blank">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
+<!--                                            <a class="btn btn-square btn-primary m-1" href=""><i-->
+<!--                                                    class="fab fa-linkedin-in"></i></a>-->
 
                                             <a class="btn btn-square btn-primary m-1" href=" https://t.me/Belkishewa" target="_blank">
                                                 <i class="fab fa-telegram-plane"></i>
+                                            </a>
+                                            <!-- WhatsApp Button -->
+                                            <a class="btn btn-square btn-primary m-1" href="https://wa.me/+251921140131" target="_blank">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
+
+                                            <!-- Phone Button -->
+                                            <a class="btn btn-square btn-primary m-1" href="tel:+251921140131">
+                                                <i class="fas fa-phone-alt"></i>
                                             </a>
 
                                         </div>
@@ -481,13 +497,18 @@
                                         <h5 class="mb-0">Jemila Aman</h5>
                                         <small>Co Founder and CEO/CMO</small>
                                         <div class="d-flex justify-content-center mt-3">
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
-                                                    class="fab fa-linkedin-in"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://www.facebook.com/YourPageName" target="_blank">
-                                                <i class="fab fa-facebook-f"></i>
+                                            <!-- Gmail Button -->
+                                            <a class="btn btn-square btn-primary m-1" href="mailto:jemilaaman5@gmail.com">
+                                                <i class="fas fa-envelope"></i>
                                             </a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://wa.me/YourPhoneNumber" target="_blank">
+                                            <!-- WhatsApp Button -->
+                                            <a class="btn btn-square btn-primary m-1" href="https://wa.me/+251919294551" target="_blank">
                                                 <i class="fab fa-whatsapp"></i>
+                                            </a>
+
+                                            <!-- Phone Button -->
+                                            <a class="btn btn-square btn-primary m-1" href="tel:+251919294551">
+                                                <i class="fas fa-phone-alt"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -502,13 +523,17 @@
                                         <h5 class="mb-0">Mastewal Mulugeta hailemaryam</h5>
                                         <small>Co Founder and CTO</small>
                                         <div class="d-flex justify-content-center mt-3">
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
-                                                    class="fab fa-linkedin-in"></i></a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://t.me/YourChannelName" target="_blank">
-                                                <i class="fab fa-telegram-plane"></i>
-                                            </a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://wa.me/YourPhoneNumber" target="_blank">
+                                            <!-- Gmail Button -->
+                                            <a class="btn btn-square btn-primary m-1" href="mailto:mastewalmulugeta255@gmail.com">
+                                                <i class="fas fa-envelope"></i>
+                                            <!-- WhatsApp Button -->
+                                            <a class="btn btn-square btn-primary m-1" href="https://wa.me/+251799100161" target="_blank">
                                                 <i class="fab fa-whatsapp"></i>
+                                            </a>
+
+                                            <!-- Phone Button -->
+                                            <a class="btn btn-square btn-primary m-1" href="tel:+251799100161">
+                                                <i class="fas fa-phone-alt"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -519,14 +544,18 @@
                                         <h5 class="mb-0">Tigist Melaku</h5>
                                         <small>CHRO</small>
                                         <div class="d-flex justify-content-center mt-3">
-                                            <a class="btn btn-square btn-primary m-1" href="https://t.me/YourChannelName" target="_blank">
-                                                <i class="fab fa-telegram-plane"></i>
+                                            <!-- Gmail Button -->
+                                            <a class="btn btn-square btn-primary m-1" href="mailto:tigistmelaku99@gmail.com">
+                                                <i class="fas fa-envelope"></i>
                                             </a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://www.facebook.com/YourPageName" target="_blank">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                            <a class="btn btn-square btn-primary m-1" href="https://wa.me/YourPhoneNumber" target="_blank">
-                                                <i class="fab fa-whatsapp"></i>
+<!--                                            &lt;!&ndash; WhatsApp Button &ndash;&gt;-->
+<!--                                            <a class="btn btn-square btn-primary m-1" href="https://wa.me/+2519" target="_blank">-->
+<!--                                                <i class="fab fa-whatsapp"></i>-->
+<!--                                            </a>-->
+
+                                            <!-- Phone Button -->
+                                            <a class="btn btn-square btn-primary m-1" href="tel:+251922369002">
+                                                <i class="fas fa-phone-alt"></i>
                                             </a>
 
 
